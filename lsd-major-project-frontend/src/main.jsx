@@ -5,7 +5,7 @@ import './index.css';
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router';
 
 import Layout from './Components/Layout';
-import { Discover, Home, Login } from './Components';
+import { Discover, Home, Login , NOTFOUND} from './Components';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -13,6 +13,7 @@ const router = createBrowserRouter(
       <Route path="/" element={<Home />} />
       <Route path="/discover" element={<Discover />} />
       <Route path="/login" element={<Login />} />
+      <Route path='*' element={<NOTFOUND/>}/>
     </Route>
   )
 );

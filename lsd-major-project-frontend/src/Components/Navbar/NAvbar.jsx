@@ -10,15 +10,14 @@ function Navbar() {
   }
   return (
     <nav className="flex items-center justify-between py-4 px-8 bg-gray-800 text-white shadow-lg">
-      <div className="text-2xl font-bold bg-gray-800">StoryVerse</div>
+      <div className="text-2xl font-bold bg-gray-800">StoryTelling</div>
 
-      {/* User avatar and Search bar wrapper */}
       <div className="flex items-center space-x-6 ml-auto bg-gray-800">
         {/* Search bar with icon */}
-        <div className="relative w-64 "> {/* Fixed width to prevent overlap */}
+        <div className="relative w-64 ">
           <input
             type="text"
-            placeholder="Search stories..."
+            placeholder="Search "
             className="w-full pl-10 pr-3 py-2 rounded bg-gray-700 text-white focus:outline-none"
           />
           <Search className="absolute left-3 bg-gray-700 top-2.5 text-gray-400 w-5 h-5" />
